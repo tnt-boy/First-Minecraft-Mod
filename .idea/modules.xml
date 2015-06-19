@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Minecraft-Mod.iml" filepath="$PROJECT_DIR$/Minecraft-Mod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/First-Minecraft-Mod.iml" filepath="$PROJECT_DIR$/First-Minecraft-Mod.iml" />
     </modules>
   </component>
 </project>
