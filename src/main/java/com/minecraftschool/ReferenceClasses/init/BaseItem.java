@@ -11,19 +11,24 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  */
 public class BaseItem {
     public static Item base_block;
+    public static Item arif_first_block;
 
     public static void init() {
         base_block = new Item().setUnlocalizedName("base_block");
+        arif_first_block = new Item().setUnlocalizedName("arif_first_block");
     }
 
     public static void register() {
         GameRegistry.registerItem(base_block, base_block.getUnlocalizedName().substring(5));  //"tile:base_block"
+        GameRegistry.registerItem(arif_first_block, arif_first_block.getUnlocalizedName().substring(5));  //"tile:base_block"
     }
 
     public static void registerRenders() {
-        if (base_block == null) init();
+
+
 
         registerRender(base_block);
+        registerRender(arif_first_block);
     }
 
     public static void registerRender(Item item) {
