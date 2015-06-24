@@ -13,3 +13,10 @@ hs_err_pid*
 
 # log files
 .gradle/*.log
+
+# eclipse files
+eclipse/*
+
+# idea files
+.idea/*
+
