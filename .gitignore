@@ -19,3 +19,13 @@ hs_err_pid*
 
 # build bits
 /build/
+
+# idea files
+.idea/*
+
+# eclipse files
+eclipse/*
+
+# gradle dotfiles
+.gradle/*
+
