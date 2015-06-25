@@ -10,25 +10,22 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  * Created by R.Steven on 6/18/2015.
  */
 public class BaseItem {
-    public static Item base_block;
-    public static Item arif_first_block;
+    public static Item base_item;
+    public static Item arif_first_item;
 
     public static void init() {
-        base_block = new Item().setUnlocalizedName("base_block");
-        arif_first_block = new Item().setUnlocalizedName("arif_first_block");
+        base_item = new Item().setUnlocalizedName("base_item");
+        arif_first_item = new Item().setUnlocalizedName("arif_first_item");
     }
 
     public static void register() {
-        GameRegistry.registerItem(base_block, base_block.getUnlocalizedName().substring(5));  //"tile:base_block"
-        GameRegistry.registerItem(arif_first_block, arif_first_block.getUnlocalizedName().substring(5));  //"tile:base_block"
+        GameRegistry.registerItem(base_item, base_item.getUnlocalizedName().substring(5));  //"tile:base_item"
+        GameRegistry.registerItem(arif_first_item, arif_first_item.getUnlocalizedName().substring(5));  //"tile:arif_first_item"
     }
 
     public static void registerRenders() {
-
-
-
-        registerRender(base_block);
-        registerRender(arif_first_block);
+        registerRender(base_item);
+        registerRender(arif_first_item);
     }
 
     public static void registerRender(Item item) {
