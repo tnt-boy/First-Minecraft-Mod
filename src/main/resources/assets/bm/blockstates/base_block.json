@@ -1,0 +1,7 @@
+{
+    "variants": {
+      "normal": {
+        "model": "bm:base_block"
+      }
+    }
+}
