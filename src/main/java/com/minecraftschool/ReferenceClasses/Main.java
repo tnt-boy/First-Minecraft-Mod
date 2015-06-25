@@ -1,5 +1,6 @@
 package com.minecraftschool.ReferenceClasses;
 
+import com.minecraftschool.ReferenceClasses.init.Blocks;
 import com.minecraftschool.ReferenceClasses.init.Items;
 import com.minecraftschool.ReferenceClasses.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
@@ -22,6 +23,8 @@ public class Main {
     public void preInit(FMLPreInitializationEvent event) {
         Items.init();
         Items.register();
+        Blocks.init();
+        Blocks.register();
     }
 
     @EventHandler

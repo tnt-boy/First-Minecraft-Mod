@@ -1,5 +1,6 @@
 package com.minecraftschool.ReferenceClasses.proxy;
 
+import com.minecraftschool.ReferenceClasses.init.Blocks;
 import com.minecraftschool.ReferenceClasses.init.Items;
 
 /**

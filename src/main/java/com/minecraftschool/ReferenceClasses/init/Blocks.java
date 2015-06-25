@@ -8,7 +8,7 @@ import net.minecraft.block.Block;
 public class Blocks {
 
     public static Block base_block;
-    
+
     public static void init() {
 
     }

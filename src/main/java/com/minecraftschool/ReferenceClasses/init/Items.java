@@ -6,31 +6,42 @@ import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by R.Steven on 6/18/2015.
  */
 public class Items {
-    public static Item base_item;
-    public static Item arif_first_item;
+
+    private static List<Item> itemList = new ArrayList<Item>();
+
+    private static Item registerItem(String unlocalizedName) {
+        return new Item().setUnlocalizedName(unlocalizedName);
+    }
 
     public static void init() {
-        base_item = new Item().setUnlocalizedName("base_item");
-        arif_first_item = new Item().setUnlocalizedName("arif_first_item");
+        itemList.add(registerItem("base_item"));
+        itemList.add(registerItem("arif_first_item"));
     }
 
     public static void register() {
-        GameRegistry.registerItem(base_item, base_item.getUnlocalizedName().substring(5));  //"tile:base_item"
-        GameRegistry.registerItem(arif_first_item, arif_first_item.getUnlocalizedName().substring(5));  //"tile:arif_first_item"
+        for (Item item : itemList) {
+            GameRegistry.registerItem(item, item.getUnlocalizedName().substring(5));
+        }
     }
 
     public static void registerRenders() {
-        registerRender(base_item);
-        registerRender(arif_first_item);
+        for (Item item : itemList) {
+            registerRender(item);
+        }
     }
 
     public static void registerRender(Item item) {
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(
+        Minecraft.getMinecraft()
+                .getRenderItem()
+                .getItemModelMesher()
+                .register(item, 0, new ModelResourceLocation(
                 GlobalConstants.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
     }
-
 }
