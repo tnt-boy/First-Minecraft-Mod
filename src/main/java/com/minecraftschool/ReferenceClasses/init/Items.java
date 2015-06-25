@@ -1,6 +1,6 @@
 package com.minecraftschool.ReferenceClasses.init;
 
-import com.minecraftschool.ReferenceClasses.Reference;
+import com.minecraftschool.ReferenceClasses.GlobalConstants;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 /**
  * Created by R.Steven on 6/18/2015.
  */
-public class BaseItem {
+public class Items {
     public static Item base_item;
     public static Item arif_first_item;
 
@@ -30,7 +30,7 @@ public class BaseItem {
 
     public static void registerRender(Item item) {
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(
-                Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+                GlobalConstants.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
     }
 
 }
