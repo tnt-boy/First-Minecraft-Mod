@@ -1,7 +1,7 @@
 {
     "variants": {
       "normal": {
-        "model": "bm:arif_first_block"
+        "model": "bm:core"
       }
     }
 }

@@ -25,7 +25,7 @@ public class Blocks {
 
     public static void init() {
         blockList.add(registerItem("base_block"));
-        blockList.add(registerItem("arif_first_block"));
+        blockList.add(registerItem("core"));
     }
 
     public static void register() {

@@ -1,7 +1,7 @@
 {
   "parent": "builtin/generated",
   "textures": {
-    "layer0": "bm:blocks/arif_first_block"
+    "layer0": "bm:blocks/core"
   },
   "display": {
     "thirdperson": {
