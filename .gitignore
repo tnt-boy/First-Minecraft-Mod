@@ -27,10 +27,14 @@ build/*
 out/*
 # idea files
 .idea/*
+*.iml
+*.ipr
+*.iws
 
 # eclipse files
 eclipse/*
 
 # gradle dotfiles
 .gradle/*
+
 
